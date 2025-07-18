@@ -326,7 +326,7 @@ export default function Home() {
             <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#5e0000'}}>GET IN TOUCH</h2>
             <div className="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              We're here to serve our student community. Reach out to us for support, questions, or to get involved.
+              We&apos;re here to serve our student community. Reach out to us for support, questions, or to get involved.
             </p>
           </div>
           
