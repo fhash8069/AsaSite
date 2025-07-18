@@ -8,8 +8,8 @@ export default function Home() {
       <nav className="bg-white shadow-lg border-b-4 border-burgundy-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            <div className="flex items-center space-x-6">
-              <div className="w-16 h-16 relative">
+            <div className="flex items-center">
+              <div className="w-48 h-20 relative">
                 <Image
                   src="/assets/images/logov2.webp"
                   alt="Arab Student Association Logo"
@@ -17,25 +17,17 @@ export default function Home() {
                   className="object-contain rounded-lg"
                 />
               </div>
-              <div className="hidden md:block">
-                <h1 className="text-xl font-bold" style={{color: '#5e0000'}}>Arab Student Association</h1>
-                <p className="text-sm text-burgundy-600">Building Community Through Education</p>
-              </div>
             </div>
             
             <div className="hidden md:flex space-x-10">
-              <a href="#home" className="text-burgundy-700 hover:text-amber-600 font-semibold">HOME</a>
-              <a href="#about" className="text-burgundy-600 hover:text-burgundy-800 font-semibold">ABOUT</a>
-              <a href="#programs" className="text-burgundy-600 hover:text-burgundy-800 font-semibold">PROGRAMS</a>
-              <a href="#events" className="text-burgundy-600 hover:text-burgundy-800 font-semibold">EVENTS</a>
-              <a href="#contact" className="text-burgundy-600 hover:text-burgundy-800 font-semibold">CONTACT</a>
+              <a href="#home" className="font-semibold" style={{color: '#7f1d1d'}}>HOME</a>
+              <a href="#about" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>ABOUT</a>
+              <a href="#programs" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>PROGRAMS</a>
+              <a href="#events" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>EVENTS</a>
+              <a href="#contact" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>CONTACT</a>
             </div>
 
-            <div className="flex items-center space-x-6">
-              <div className="text-right text-sm">
-                <p className="text-burgundy-700 font-semibold">Phone</p>
-                <p className="text-burgundy-600">+1-555-ATLAS</p>
-              </div>
+            <div className="flex items-center">
               <button className="bg-burgundy-700 text-white px-6 py-2 rounded-md hover:bg-burgundy-800 transition-colors border-2 border-burgundy-700">
                 Join Us
               </button>
@@ -126,28 +118,25 @@ export default function Home() {
               <h3 className="text-2xl font-bold" style={{color: '#5e0000'}}>
                 Our Mission & Vision
               </h3>
-              <p className="text-gray-800 leading-relaxed text-lg">
+              <p className="leading-relaxed text-lg about-text-burgundy">
                 Arab Student Association is a dynamic, cultural, and educational organization 
                 that offers unique programs and services to strengthen Arab student communities. 
                 We believe in preserving our rich heritage while building bridges to the future.
               </p>
               
               <div className="grid grid-cols-2 gap-6 mt-8">
-                <div className="text-center p-6 bg-burgundy-50 rounded-lg">
-                  <h4 className="text-3xl font-bold text-burgundy-700 mb-2">15+</h4>
-                  <p className="text-burgundy-600 font-semibold">Years of Service</p>
+                <div className="text-center p-6 rounded-lg border-2" style={{backgroundColor: '#fef2f2', borderColor: '#7f1d1d'}}>
+                  <h4 className="text-3xl font-bold mb-2" style={{color: '#7f1d1d'}}>15+</h4>
+                  <p className="font-semibold" style={{color: '#7f1d1d'}}>Years of Service</p>
                 </div>
-                <div className="text-center p-6 bg-amber-50 rounded-lg">
-                  <h4 className="text-3xl font-bold text-amber-600 mb-2">2K+</h4>
-                  <p className="text-amber-700 font-semibold">Student Members</p>
+                <div className="text-center p-6 rounded-lg border-2" style={{backgroundColor: '#fef2f2', borderColor: '#7f1d1d'}}>
+                  <h4 className="text-3xl font-bold mb-2" style={{color: '#7f1d1d'}}>200+</h4>
+                  <p className="font-semibold" style={{color: '#7f1d1d'}}>Student Members</p>
                 </div>
               </div>
               
               <div className="flex space-x-4 mt-8">
-                <button className="bg-burgundy-700 hover:bg-burgundy-800 text-white px-6 py-3 rounded-lg font-semibold transition-colors border-2 border-burgundy-700">
-                  LEARN MORE
-                </button>
-                <button className="border-2 border-burgundy-700 hover:bg-burgundy-700 hover:text-white text-burgundy-700 px-6 py-3 rounded-lg font-semibold transition-colors">
+                <button className="px-6 py-3 rounded-lg font-semibold transition-colors border-2 hover:bg-opacity-10" style={{borderColor: '#7f1d1d', color: '#7f1d1d', backgroundColor: 'transparent'}}>
                   OUR HISTORY
                 </button>
               </div>
@@ -241,7 +230,7 @@ export default function Home() {
       </section>
 
       {/* Events Section */}
-      <section id="events" className="py-20 bg-burgundy-800 relative overflow-hidden">
+      <section id="events" className="py-20 relative overflow-hidden" style={{backgroundColor: '#f9fafb'}}>
         {/* Background Pattern */}
         <div 
           className="absolute inset-0 opacity-10"
@@ -254,25 +243,25 @@ export default function Home() {
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#5e0000'}}>UPCOMING EVENTS</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4" style={{color: '#7f1d1d'}}>UPCOMING EVENTS</h2>
             <div className="w-24 h-1 bg-amber-500 mx-auto mb-8"></div>
-            <p className="text-xl text-burgundy-700 max-w-3xl mx-auto font-semibold">
+            <p className="text-xl max-w-3xl mx-auto font-semibold" style={{color: '#991b1b'}}>
               Join us for student gatherings, educational workshops, and cultural celebrations
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+            <div className="backdrop-blur-lg rounded-xl p-8 shadow-xl border" style={{backgroundColor: 'rgba(255, 255, 255, 0.15)', borderColor: 'rgba(255, 255, 255, 0.2)'}}>
               <div className="flex items-center mb-4">
                 <div className="bg-amber-500 text-burgundy-900 px-4 py-2 rounded-lg font-bold text-lg mr-4">
                   MAR 15
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-burgundy-700">Annual Cultural Festival</h3>
-                  <p className="text-burgundy-600 font-semibold">Student Center • 6:00 PM</p>
+                  <h3 className="text-xl font-bold" style={{color: '#7f1d1d'}}>Annual Cultural Festival</h3>
+                  <p className="font-semibold" style={{color: '#991b1b'}}>Student Center • 6:00 PM</p>
                 </div>
               </div>
-              <p className="text-burgundy-700 mb-4 font-medium">
+              <p className="mb-4 font-medium" style={{color: '#7f1d1d'}}>
                 Join us for an evening of traditional music, dance, food, and cultural exhibitions 
                 celebrating our rich Arab heritage.
               </p>
@@ -281,17 +270,17 @@ export default function Home() {
               </button>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+            <div className="backdrop-blur-lg rounded-xl p-8 shadow-xl border" style={{backgroundColor: 'rgba(255, 255, 255, 0.15)', borderColor: 'rgba(255, 255, 255, 0.2)'}}>
               <div className="flex items-center mb-4">
                 <div className="bg-amber-500 text-burgundy-900 px-4 py-2 rounded-lg font-bold text-lg mr-4">
                   MAR 22
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-burgundy-700">Student Leadership Workshop</h3>
-                  <p className="text-burgundy-600 font-semibold">Online & In-Person • 2:00 PM</p>
+                  <h3 className="text-xl font-bold" style={{color: '#7f1d1d'}}>Student Leadership Workshop</h3>
+                  <p className="font-semibold" style={{color: '#991b1b'}}>Online & In-Person • 2:00 PM</p>
                 </div>
               </div>
-              <p className="text-burgundy-700 mb-4 font-medium">
+              <p className="mb-4 font-medium" style={{color: '#7f1d1d'}}>
                 Empowering the next generation of Arab student leaders through skill-building workshops 
                 and mentorship programs.
               </p>
@@ -344,36 +333,57 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center p-8 bg-burgundy-50 rounded-xl">
               <div className="w-16 h-16 bg-burgundy-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">📧</span>
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
               </div>
               <h3 className="text-xl font-bold mb-2" style={{color: '#5e0000'}}>Email</h3>
-              <p className="text-burgundy-600">info@arabstudents.org</p>
-              <p className="text-burgundy-600">support@arabstudents.org</p>
+              <p style={{color: '#7f1d1d'}}>info@arabstudents.org</p>
+              <p style={{color: '#7f1d1d'}}>support@arabstudents.org</p>
             </div>
             
-            <div className="text-center p-8 bg-amber-50 rounded-xl">
-              <div className="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">📞</span>
-              </div>
-              <h3 className="text-xl font-bold mb-2" style={{color: '#5e0000'}}>Phone</h3>
-              <p className="text-amber-700">+1-555-STUDENT</p>
-              <p className="text-amber-700">+1-555-783-3368</p>
+            <div className="text-center p-8 bg-yellow-50 rounded-xl">
+              <a 
+                href="https://www.instagram.com/asa.at.uic?utm_source=ig_web_button_share_sheet&igsh=eHVtejN4aWFtYnF5" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block hover:opacity-80 transition-opacity"
+              >
+                <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Image
+                    src="/assets/images/instalogo.webp"
+                    alt="Instagram Logo"
+                    width={32}
+                    height={32}
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-2" style={{color: '#5e0000'}}>Instagram</h3>
+                <p style={{color: '#7f1d1d'}}>@asa.at.uic</p>
+                <p style={{color: '#7f1d1d'}} className="text-sm">Follow us for updates!</p>
+              </a>
             </div>
             
             <div className="text-center p-8 bg-burgundy-50 rounded-xl">
               <div className="w-16 h-16 bg-burgundy-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-xl">📍</span>
+                <Image
+                  src="/assets/images/logouic.png"
+                  alt="UIC Logo"
+                  width={32}
+                  height={32}
+                  className="object-contain"
+                />
               </div>
               <h3 className="text-xl font-bold mb-2" style={{color: '#5e0000'}}>Location</h3>
-              <p className="text-burgundy-600">Student Union Building</p>
-              <p className="text-burgundy-600">123 University Avenue</p>
+              <p style={{color: '#7f1d1d'}}>1200 W Harrison St</p>
+              <p style={{color: '#7f1d1d'}}>Chicago, IL 60607</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-burgundy-900 text-white py-12 relative overflow-hidden">
+      <footer className="py-12 relative overflow-hidden" style={{backgroundColor: '#f3f4f6'}}>
         {/* Background Pattern */}
         <div 
           className="absolute inset-0 opacity-5"
@@ -397,11 +407,11 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-burgundy-700">Arab Student Association</h3>
-                  <p className="text-burgundy-600 font-semibold">Building Community Through Education</p>
+                  <h3 className="text-xl font-bold" style={{color: '#7f1d1d'}}>Arab Student Association</h3>
+                  <p className="font-semibold" style={{color: '#991b1b'}}>Building Community Through Education</p>
                 </div>
               </div>
-              <p className="text-burgundy-600 mb-6 max-w-md font-medium">
+              <p className="mb-6 max-w-md font-medium" style={{color: '#7f1d1d'}}>
                 Building bridges between cultures while preserving our rich Arab heritage 
                 and empowering student communities for a brighter future.
               </p>
@@ -419,28 +429,28 @@ export default function Home() {
             </div>
             
             <div>
-              <h4 className="text-lg font-bold mb-4" style={{color: '#5e0000'}}>Quick Links</h4>
-              <ul className="space-y-2 text-burgundy-600 font-semibold">
-                <li><a href="#about" className="hover:text-amber-300">About Us</a></li>
-                <li><a href="#programs" className="hover:text-amber-300">Programs</a></li>
-                <li><a href="#events" className="hover:text-amber-300">Events</a></li>
-                <li><a href="#contact" className="hover:text-amber-300">Contact</a></li>
+              <h4 className="text-lg font-bold mb-4" style={{color: '#7f1d1d'}}>Quick Links</h4>
+              <ul className="space-y-2 font-semibold">
+                <li><a href="#about" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>About Us</a></li>
+                <li><a href="#programs" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Programs</a></li>
+                <li><a href="#events" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Events</a></li>
+                <li><a href="#contact" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Contact</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="text-lg font-bold mb-4" style={{color: '#5e0000'}}>Programs</h4>
-              <ul className="space-y-2 text-burgundy-600 font-semibold">
-                <li><a href="#" className="hover:text-amber-300">Education</a></li>
-                <li><a href="#" className="hover:text-amber-300">Student Services</a></li>
-                <li><a href="#" className="hover:text-amber-300">Cultural Heritage</a></li>
-                <li><a href="#" className="hover:text-amber-300">Leadership</a></li>
+              <h4 className="text-lg font-bold mb-4" style={{color: '#7f1d1d'}}>Programs</h4>
+              <ul className="space-y-2 font-semibold">
+                <li><a href="#" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Education</a></li>
+                <li><a href="#" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Student Services</a></li>
+                <li><a href="#" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Cultural Heritage</a></li>
+                <li><a href="#" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Leadership</a></li>
               </ul>
             </div>
           </div>
           
-          <div className="border-t border-burgundy-700 mt-12 pt-8 text-center text-burgundy-600 font-semibold">
-            <p>&copy; 2024 Arab Student Association. All rights reserved.</p>
+          <div className="border-t border-burgundy-700 mt-12 pt-8 text-center font-semibold">
+            <p style={{color: '#7f1d1d'}}>&copy; 2024 Arab Student Association. All rights reserved.</p>
           </div>
         </div>
       </footer>

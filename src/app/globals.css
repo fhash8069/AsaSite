@@ -341,3 +341,8 @@ a:focus {
     border: 1px solid #ccc;
   }
 } 
+
+/* Fix for about section text color override */
+.about-text-burgundy {
+  color: #7f1d1d !important;
+} 
