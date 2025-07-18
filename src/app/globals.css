@@ -1,4 +1,6 @@
-@import "tailwindcss";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 :root {
   --background: #faf8f5;
@@ -340,7 +342,7 @@ a:focus {
     backdrop-filter: none;
     border: 1px solid #ccc;
   }
-} 
+}
 
 /* Fix for about section text color override */
 .about-text-burgundy {

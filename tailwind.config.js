@@ -8,9 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        // Custom color palette based on the logo
+        // Custom color palette
         burgundy: {
           50: '#fef2f2',
           100: '#fee2e2',
