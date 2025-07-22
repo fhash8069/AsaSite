@@ -20,17 +20,17 @@ export default function Home() {
             </div>
             
             <div className="hidden md:flex space-x-10">
-              <a href="#home" className="font-semibold" style={{color: '#7f1d1d'}}>HOME</a>
-              <a href="#about" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>ABOUT</a>
-              <a href="#programs" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>PROGRAMS</a>
-              <a href="#events" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>EVENTS</a>
-              <a href="#contact" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>CONTACT</a>
+              <a href="/" className="font-semibold" style={{color: '#7f1d1d'}}>HOME</a>
+              <a href="/about" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>ABOUT</a>
+              <a href="/programs" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>PROGRAMS</a>
+              <a href="/events" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>EVENTS</a>
+              <a href="/contact" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>CONTACT</a>
             </div>
 
             <div className="flex items-center">
-              <button className="bg-burgundy-700 text-white px-6 py-2 rounded-md hover:bg-burgundy-800 transition-colors border-2 border-burgundy-700">
+              <a href="/contact" className="bg-burgundy-700 text-white px-6 py-2 rounded-md hover:bg-burgundy-800 transition-colors border-2 border-burgundy-700">
                 Join Us
-              </button>
+              </a>
             </div>
           </div>
         </div>
