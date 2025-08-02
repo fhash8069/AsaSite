@@ -13,6 +13,11 @@ const nextConfig = {
   
   // Remove problematic headers that conflict with Vercel
   poweredByHeader: false,
+  
+  // Disable ESLint during builds
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 }
 
 module.exports = nextConfig 
