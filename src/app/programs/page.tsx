@@ -13,7 +13,7 @@ export default function Programs() {
             <div className="flex items-center">
               <div className="w-48 h-20 relative">
                 <Image
-                  src="/assets/images/logov2.webp"
+                  src={getImagePath("/assets/images/logov2.webp")}
                   alt="Arab Student Association Logo"
                   fill
                   className="object-contain rounded-lg"
@@ -78,7 +78,7 @@ export default function Programs() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="relative h-64">
                 <Image
-                  src="/assets/images/asaasset5.jpg"
+                  src={getImagePath("/assets/images/asaasset5.jpg")}
                   alt="Education programs"
                   fill
                   className="object-cover"
@@ -127,7 +127,7 @@ export default function Programs() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="relative h-64">
                 <Image
-                  src="/assets/images/market.jpg"
+                  src={getImagePath("/assets/images/market.jpg")}
                   alt="Community services"
                   fill
                   className="object-cover"
@@ -176,7 +176,7 @@ export default function Programs() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="relative h-64">
                 <Image
-                  src="/assets/images/village.webp"
+                  src={getImagePath("/assets/images/village.webp")}
                   alt="Cultural programs"
                   fill
                   className="object-cover"
@@ -323,7 +323,7 @@ export default function Programs() {
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 relative">
                   <Image
-                    src="/472730964_992003129423015_6355583218082061287_n (1).jpg"
+                    src={getImagePath("/472730964_992003129423015_6355583218082061287_n (1).jpg")}
                     alt="Arab Student Association Logo"
                     fill
                     className="object-contain rounded-lg"

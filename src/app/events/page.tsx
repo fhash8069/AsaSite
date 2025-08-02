@@ -40,7 +40,7 @@ export default function Events() {
             <div className="flex items-center">
               <div className="w-48 h-20 relative">
                 <Image
-                  src="/assets/images/logov2.webp"
+                  src={getImagePath("/assets/images/logov2.webp")}
                   alt="Arab Student Association Logo"
                   fill
                   className="object-contain rounded-lg"
@@ -180,7 +180,7 @@ export default function Events() {
                   className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white px-6 py-3 rounded-lg font-semibold transition-all flex items-center justify-center gap-2"
                 >
                   <Image
-                    src="/assets/images/instalogo.webp"
+                    src={getImagePath("/assets/images/instalogo.webp")}
                     alt="Instagram"
                     width={20}
                     height={20}
@@ -212,7 +212,7 @@ export default function Events() {
             <div className="bg-gradient-to-br from-burgundy-50 to-amber-50 rounded-xl p-6 shadow-lg">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/assets/images/village2.jpg"
+                  src={getImagePath("/assets/images/village2.jpg")}
                   alt="Cultural Festival"
                   fill
                   className="object-cover"
@@ -233,7 +233,7 @@ export default function Events() {
             <div className="bg-gradient-to-br from-burgundy-50 to-amber-50 rounded-xl p-6 shadow-lg">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/assets/images/asaasset5.jpg"
+                  src={getImagePath("/assets/images/asaasset5.jpg")}
                   alt="Leadership Workshop"
                   fill
                   className="object-cover"
@@ -254,7 +254,7 @@ export default function Events() {
             <div className="bg-gradient-to-br from-burgundy-50 to-amber-50 rounded-xl p-6 shadow-lg">
               <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/assets/images/market.jpg"
+                  src={getImagePath("/assets/images/market.jpg")}
                   alt="Community Service"
                   fill
                   className="object-cover"
@@ -292,7 +292,7 @@ export default function Events() {
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 relative">
                   <Image
-                    src="/472730964_992003129423015_6355583218082061287_n (1).jpg"
+                    src={getImagePath("/472730964_992003129423015_6355583218082061287_n (1).jpg")}
                     alt="Arab Student Association Logo"
                     fill
                     className="object-contain rounded-lg"

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { getImagePath } from '@/lib/utils'
 
 interface LogoProps {
   size?: 'sm' | 'md' | 'lg' | 'xl'
@@ -21,7 +22,7 @@ const Logo = ({ size = 'md', className = '', variant = 'full' }: LogoProps) => {
     return (
       <div className={`relative ${currentSize.container} ${className}`}>
         <Image
-          src="/472730964_992003129423015_6355583218082061287_n (1).jpg"
+          src={getImagePath("/472730964_992003129423015_6355583218082061287_n (1).jpg")}
           alt="AsaSite Logo"
           width={currentSize.imageSize}
           height={currentSize.imageSize}
@@ -37,7 +38,7 @@ const Logo = ({ size = 'md', className = '', variant = 'full' }: LogoProps) => {
       <div className={`flex flex-col items-center ${className}`}>
         <div className={`relative ${currentSize.container} mb-2`}>
           <Image
-            src="/472730964_992003129423015_6355583218082061287_n (1).jpg"
+            src={getImagePath("/472730964_992003129423015_6355583218082061287_n (1).jpg")}
             alt="AsaSite Logo"
             width={currentSize.imageSize}
             height={currentSize.imageSize}
@@ -55,7 +56,7 @@ const Logo = ({ size = 'md', className = '', variant = 'full' }: LogoProps) => {
   return (
     <div className={`relative ${currentSize.container} ${className}`}>
       <Image
-        src="/472730964_992003129423015_6355583218082061287_n (1).jpg"
+        src={getImagePath("/472730964_992003129423015_6355583218082061287_n (1).jpg")}
         alt="AsaSite - منظمة أطلس العرب"
         width={currentSize.imageSize}
         height={currentSize.imageSize}

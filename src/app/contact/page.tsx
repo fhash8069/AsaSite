@@ -13,7 +13,7 @@ export default function Contact() {
             <div className="flex items-center">
               <div className="w-48 h-20 relative">
                 <Image
-                  src="/assets/images/logov2.webp"
+                  src={getImagePath("/assets/images/logov2.webp")}
                   alt="Arab Student Association Logo"
                   fill
                   className="object-contain rounded-lg"
@@ -166,7 +166,7 @@ export default function Contact() {
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center mr-4">
                   <Image
-                    src="/assets/images/instalogo.webp"
+                    src={getImagePath("/assets/images/instalogo.webp")}
                     alt="Instagram"
                     width={24}
                     height={24}
@@ -304,7 +304,7 @@ export default function Contact() {
               >
                 <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Image
-                    src="/assets/images/instalogo.webp"
+                    src={getImagePath("/assets/images/instalogo.webp")}
                     alt="Instagram Logo"
                     width={32}
                     height={32}
@@ -320,7 +320,7 @@ export default function Contact() {
             <div className="text-center p-8 bg-white/90 backdrop-blur-lg rounded-xl shadow-lg">
               <div className="w-16 h-16 bg-burgundy-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Image
-                  src="/assets/images/logouic.png"
+                  src={getImagePath("/assets/images/logouic.png")}
                   alt="UIC Logo"
                   width={32}
                   height={32}
@@ -428,7 +428,7 @@ export default function Contact() {
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 relative">
                   <Image
-                    src="/472730964_992003129423015_6355583218082061287_n (1).jpg"
+                    src={getImagePath("/472730964_992003129423015_6355583218082061287_n (1).jpg")}
                     alt="Arab Student Association Logo"
                     fill
                     className="object-contain rounded-lg"

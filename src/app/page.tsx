@@ -13,7 +13,7 @@ export default function Home() {
             <div className="flex items-center">
               <div className="w-48 h-20 relative">
                 <Image
-                  src="/assets/images/logov2.webp"
+                  src={getImagePath("/assets/images/logov2.webp")}
                   alt="Arab Student Association Logo"
                   fill
                   className="object-contain rounded-lg"
@@ -108,7 +108,7 @@ export default function Home() {
             <div>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/assets/images/village2.jpg"
+                  src={getImagePath("/assets/images/village2.jpg")}
                   alt="Community gathering"
                   fill
                   className="object-cover"
@@ -163,7 +163,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/assets/images/asaasset5.jpg"
+                  src={getImagePath("/assets/images/asaasset5.jpg")}
                   alt="Education programs"
                   fill
                   className="object-cover"
@@ -186,7 +186,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/assets/images/market.jpg"
+                  src={getImagePath("/assets/images/market.jpg")}
                   alt="Community services"
                   fill
                   className="object-cover"
@@ -209,7 +209,7 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src="/assets/images/village.webp"
+                  src={getImagePath("/assets/images/village.webp")}
                   alt="Cultural programs"
                   fill
                   className="object-cover"
@@ -298,7 +298,7 @@ export default function Home() {
       <section className="relative h-96 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/assets/images/asset6.jpg"
+            src={getImagePath("/assets/images/asset6.jpg")}
             alt="Cultural heritage"
             fill
             className="object-cover"
@@ -353,7 +353,7 @@ export default function Home() {
               >
                 <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Image
-                    src="/assets/images/instalogo.webp"
+                    src={getImagePath("/assets/images/instalogo.webp")}
                     alt="Instagram Logo"
                     width={32}
                     height={32}
@@ -369,7 +369,7 @@ export default function Home() {
             <div className="text-center p-8 bg-burgundy-50 rounded-xl">
               <div className="w-16 h-16 bg-burgundy-700 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Image
-                  src="/assets/images/logouic.png"
+                  src={getImagePath("/assets/images/logouic.png")}
                   alt="UIC Logo"
                   width={32}
                   height={32}
@@ -402,7 +402,7 @@ export default function Home() {
               <div className="flex items-center space-x-4 mb-6">
                 <div className="w-16 h-16 relative">
                   <Image
-                    src="/472730964_992003129423015_6355583218082061287_n (1).jpg"
+                    src={getImagePath("/472730964_992003129423015_6355583218082061287_n (1).jpg")}
                     alt="Arab Student Association Logo"
                     fill
                     className="object-contain rounded-lg"
