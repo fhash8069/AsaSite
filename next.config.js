@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/asa-site',
+  assetPrefix: '/asa-site',
   // Image optimization
   images: {
     domains: ['asa-site-theta.vercel.app'],

@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { getImagePath } from '@/lib/utils'
 
 export default function Home() {
   return (
@@ -20,17 +22,17 @@ export default function Home() {
             </div>
             
             <div className="hidden md:flex space-x-10">
-              <a href="/" className="font-semibold" style={{color: '#7f1d1d'}}>HOME</a>
-              <a href="/about" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>ABOUT</a>
-              <a href="/programs" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>PROGRAMS</a>
-              <a href="/events" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>EVENTS</a>
-              <a href="/contact" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>CONTACT</a>
+              <Link href="/" className="font-semibold" style={{color: '#7f1d1d'}}>HOME</Link>
+              <Link href="/about" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>ABOUT</Link>
+              <Link href="/programs" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>PROGRAMS</Link>
+              <Link href="/events" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>EVENTS</Link>
+              <Link href="/contact" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>CONTACT</Link>
             </div>
 
             <div className="flex items-center">
-              <a href="/contact" className="bg-burgundy-700 text-white px-6 py-2 rounded-md hover:bg-burgundy-800 transition-colors border-2 border-burgundy-700">
+              <Link href="/contact" className="bg-burgundy-700 text-white px-6 py-2 rounded-md hover:bg-burgundy-800 transition-colors border-2 border-burgundy-700">
                 Join Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -42,7 +44,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url('/assets/images/floral desighns.jpg')`,
+            backgroundImage: `url('${getImagePath('/assets/images/floral desighns.jpg')}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
@@ -235,7 +237,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 opacity-10"
           style={{
-            backgroundImage: `url('/assets/images/floral desighns.jpg')`,
+            backgroundImage: `url('${getImagePath('/assets/images/floral desighns.jpg')}')`,
             backgroundSize: '400px 400px',
             backgroundRepeat: 'repeat'
           }}
@@ -388,7 +390,7 @@ export default function Home() {
         <div 
           className="absolute inset-0 opacity-5"
           style={{
-            backgroundImage: `url('/assets/images/floral desighns.jpg')`,
+            backgroundImage: `url('${getImagePath('/assets/images/floral desighns.jpg')}')`,
             backgroundSize: '300px 300px',
             backgroundRepeat: 'repeat'
           }}

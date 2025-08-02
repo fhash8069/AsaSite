@@ -2,20 +2,20 @@
   "name": "Arab Student Association UIC",
   "short_name": "ASA UIC",
   "description": "Arab Student Association at University of Illinois Chicago - Building Bridges, Strengthening Communities",
-  "start_url": "/",
+  "start_url": "/asa-site/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#7f1d1d",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/assets/images/AsaLogo1x1.webp",
+      "src": "/asa-site/assets/images/AsaLogo1x1.webp",
       "sizes": "512x512",
       "type": "image/webp",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/images/logov2.webp",
+      "src": "/asa-site/assets/images/logov2.webp",
       "sizes": "192x192",
       "type": "image/webp"
     }
@@ -23,6 +23,6 @@
   "categories": ["education", "lifestyle", "social"],
   "lang": "en-US",
   "dir": "ltr",
-  "scope": "/",
+  "scope": "/asa-site/",
   "id": "asa-uic-app"
 } 

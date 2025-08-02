@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { getImagePath } from '@/lib/utils'
 
 export default function About() {
   return (
@@ -20,17 +22,17 @@ export default function About() {
             </div>
             
             <div className="hidden md:flex space-x-10">
-              <a href="/" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>HOME</a>
-              <a href="/about" className="font-semibold text-amber-600" style={{color: '#7f1d1d'}}>ABOUT</a>
-              <a href="/programs" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>PROGRAMS</a>
-              <a href="/events" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>EVENTS</a>
-              <a href="/contact" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>CONTACT</a>
+              <Link href="/" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>HOME</Link>
+              <Link href="/about" className="font-semibold text-amber-600" style={{color: '#7f1d1d'}}>ABOUT</Link>
+              <Link href="/programs" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>PROGRAMS</Link>
+              <Link href="/events" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>EVENTS</Link>
+              <Link href="/contact" className="font-semibold hover:text-amber-600" style={{color: '#7f1d1d'}}>CONTACT</Link>
             </div>
 
             <div className="flex items-center">
-              <a href="/contact" className="bg-burgundy-700 text-white px-6 py-2 rounded-md hover:bg-burgundy-800 transition-colors border-2 border-burgundy-700">
+              <Link href="/contact" className="bg-burgundy-700 text-white px-6 py-2 rounded-md hover:bg-burgundy-800 transition-colors border-2 border-burgundy-700">
                 Join Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -41,7 +43,7 @@ export default function About() {
         <div 
           className="absolute inset-0 opacity-20"
           style={{
-            backgroundImage: `url('/assets/images/floral desighns.jpg')`,
+            backgroundImage: `url('${getImagePath('/assets/images/floral desighns.jpg')}')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat'
@@ -222,7 +224,7 @@ export default function About() {
         <div 
           className="absolute inset-0 opacity-5"
           style={{
-            backgroundImage: `url('/assets/images/floral desighns.jpg')`,
+            backgroundImage: `url('${getImagePath('/assets/images/floral desighns.jpg')}')`,
             backgroundSize: '300px 300px',
             backgroundRepeat: 'repeat'
           }}
@@ -254,18 +256,18 @@ export default function About() {
             <div>
               <h4 className="text-lg font-bold mb-4" style={{color: '#7f1d1d'}}>Quick Links</h4>
               <ul className="space-y-2 font-semibold">
-                <li><a href="/" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Home</a></li>
-                <li><a href="/about" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>About Us</a></li>
-                <li><a href="/programs" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Programs</a></li>
-                <li><a href="/events" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Events</a></li>
+                <li><Link href="/" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Home</Link></li>
+                <li><Link href="/about" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>About Us</Link></li>
+                <li><Link href="/programs" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Programs</Link></li>
+                <li><Link href="/events" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Events</Link></li>
               </ul>
             </div>
             
             <div>
               <h4 className="text-lg font-bold mb-4" style={{color: '#7f1d1d'}}>Contact</h4>
               <ul className="space-y-2 font-semibold">
-                <li><a href="/contact" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Get in Touch</a></li>
-                <li><a href="/contact" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Join Us</a></li>
+                <li><Link href="/contact" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Get in Touch</Link></li>
+                <li><Link href="/contact" className="hover:text-amber-300" style={{color: '#7f1d1d'}}>Join Us</Link></li>
               </ul>
             </div>
           </div>
